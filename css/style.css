@@ -1,0 +1,592 @@
+/* Start Main Rules */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: lato, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.row {
+  display: flex;
+}
+
+/* End Main Rules */
+
+/* Start Navbar */
+
+nav {
+  height: 0px;
+  position: relative;
+  z-index: 2;
+}
+
+.row .logo {
+  flex: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.row .list {
+  flex: 50%;
+  margin-top: 20px;
+}
+
+.row .list ul {
+  list-style: none;
+}
+
+.row .list ul li {
+  display: inline-block;
+  margin-right: 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+
+.row .list ul li::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 1px;
+  height: 3px;
+  width: 0px;
+  background-color: #572f59;
+  transition: 0.3s;
+}
+
+.row .list ul li:hover::after {
+  width: 100%;
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.header {
+  height: 700px;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.header .info {
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  color: #fff;
+  margin-left: -337px;
+}
+
+.header .info h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.header .info p {
+  color: #fff;
+  font-size: 22px;
+  margin: 0;
+}
+
+.header .info input {
+  border: none;
+  padding: 13px;
+  width: 80%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-top: 60px;
+}
+
+.header .info button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  display: inline;
+}
+
+.header svg {
+  margin-top: 424px;
+}
+
+/* End Header */
+
+/* Start Offers */
+
+.offers {
+  padding: 100px 0;
+  background-color: #f5f5f5;
+}
+
+.offers .space {
+  margin-top: 50px;
+}
+
+.offers .city {
+  width: 23.5%;
+  max-width: 23.5%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.offers .city:not(:last-of-type) {
+  margin-right: 2%;
+}
+
+.offers .city img {
+  width: 100%;
+  box-shadow: 1px 2px 8px #777;
+}
+
+.offers .city .info {
+  padding: 10px 0 10px 25px;
+}
+
+.offers .city .info h4 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.offers .city .info p {
+  font-size: 14px;
+  color: #999;
+}
+
+/* End Offers */
+
+/* Start Travellino */
+
+.travellino {
+  background-image: url(../images/travellino.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.travellino .heading h1 {
+  color: #fff;
+  padding-top: 20px;
+}
+
+.travellino .boxes {
+  margin-top: 50px;
+}
+
+.travellino .box {
+  background-color: #fff;
+  flex: 32%;
+  max-width: 32%;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.travellino .box:not(:last-of-type) {
+  margin-right: 2%;
+}
+
+.travellino .box .icon {
+  background-color: #ff4800;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.travellino .box .icon:hover {
+  background-color: #572f59;
+}
+
+.travellino .box .icon i {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 28px;
+  color: #fff;
+}
+
+.travellino .box h3 {
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.travellino .box p {
+  font-size: 14px;
+  color: #999;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* End Travellino */
+
+/* Start Blogs */
+
+.blogs {
+  margin-top: 50px;
+}
+
+.blogs .items {
+  margin-top: 60px;
+}
+
+.blogs .box {
+  flex: 32%;
+  max-width: 32%;
+  text-align: center;
+  padding: 10px 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.blogs .box:hover {
+  box-shadow: 0px 0px 20px #aaa;
+}
+
+.blogs .box:not(:last-of-type) {
+  margin-right: 2%;
+}
+
+.blogs .box .date {
+  margin-top: 30px;
+}
+
+.blogs .box .date span {
+  color: #999;
+  margin-right: 13px;
+  font-size: 14px;
+}
+
+.blogs .box .date span i {
+  color: #572f59;
+  margin-right: 5px;
+}
+
+.blogs .box h3 {
+  font-weight: 900;
+}
+
+.blogs .box p {
+  color: #999;
+  font-size: 14px;
+}
+
+/* End Blogs */
+
+/* Start Back1 */
+
+.back {
+  margin-top: 50px;
+  background-image: url(../images/back-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.back .info {
+  position: absolute;
+  top: 30%;
+}
+
+.back .info p {
+  font-size: 50px;
+  color: #fff;
+}
+
+.back .info button {
+  display: inline;
+}
+
+/* End Back1 */
+
+/* Start Counter */
+
+.counter {
+  margin-top: 80px;
+}
+
+.counter .item {
+  flex: 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+.counter .item span {
+  display: block;
+}
+
+.counter .item span:first-of-type {
+  font-size: 33px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.counter .item span:last-of-type {
+  color: #999;
+  font-style: italic;
+}
+
+/* End Counter */
+
+/* Start Back2 */
+
+.back2 {
+  direction: rtl;
+  margin-top: 50px;
+  background-image: url(../images/back-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.back2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.back2 .info {
+  position: absolute;
+  top: 30%;
+}
+
+.back2 .info p {
+  font-size: 50px;
+  color: #fff;
+}
+
+.back2 .info button {
+  display: inline;
+}
+
+/* End Back2 */
+
+/* Start Testimonials */
+
+.testimonials {
+  margin: 70px 0 100px;
+}
+
+.testimonials .boxes {
+  margin-top: 50px;
+}
+
+.testimonials .box {
+  flex: 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+}
+
+.testimonials .box img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.testimonials .box h4 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 15px;
+  color: #333;
+}
+
+.testimonials .box p {
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
+  padding: 0 30px;
+}
+
+/* End Testimonials */
+
+/* Start Contact */
+
+.contact {
+  margin: 70px 0;
+}
+
+.contact .box {
+  flex: 33.333333%;
+  max-width: 33.3333333%;
+}
+
+.contact .box .num1 p {
+  color: #999;
+  font-size: 14px;
+  padding-right: 70px;
+}
+
+.contact .box h5 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.contact .box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact .box ul li {
+  margin-bottom: 20px;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+}
+
+.contact .box ul li i {
+  margin-right: 10px;
+  font-size: 17px;
+  color: #666;
+}
+
+.contact .box .num3 li {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact .box .num3 li:hover {
+  background-color: #333;
+}
+
+.contact .box .num3 li i {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 20px;
+  margin: 0;
+  color: #999;
+  transition: 0.3s;
+}
+
+.contact .box .num3 li:hover i {
+  color: #fff;
+}
+
+/* End Contact */
+
+/* Start Footer */
+
+footer {
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #999;
+  font-size: 14px;
+}
+
+footer p span {
+  color: #572f59;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/* End Footer */
+
+/* Start My frame work */
+.mybutton {
+  border: none;
+  padding: 15px 15px 13.9px 15px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #572f59;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.mybutton:hover {
+  background-color: #ff9900;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 35px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.heading p {
+  color: #777;
+  margin: 5px;
+}
+
+hr {
+  margin: 0 50px;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(61, 47, 47, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/* End My frame work */
